@@ -1,0 +1,82 @@
+[f6b]  char off
+
+fcd:get char
+[fb3] => [11d3]  -- [1137] bool eq 0 => [1135] => [1136]  [1136]=[1135]*0xe =>off+[1136](at 11a4(to 11a5 or 11b3))   print char
+
+[94f] 152  var
+[a99] 010e (010e+7f6 == 904)
+[d90] e0
+[dad] cf   (cf+7f6 == 8c5  wrong info off)   get at da2
+[e8c] 99   (99+7f6 == 88f  right info off)   get at e81 (68b+7f6)
+[1375] 40
+[1568] 2
+[1569] 1
+[1576] 104
+[1577] 0e
+[1589] 1
+
+[195c] fa4e
+
+
+increase print char off at 1209
+[1352] input off   set [1cb1] = off at 1cae    1cb1 get input char
+
+[1573]  +[1569]
+[1575]  0x40-c
+[1578]  [1577] 0e
+[1579]  [1576] 104
+
+
+[904]->[132f]->[1710]
+[1710] -= [1375]
+[1709] = [1710]
+[1575]  [1375]-c 0x40-c
+[1573]  [1575]
+[1578]  [1577] 0e
+[1579]  [1576] 104
+[1573]  -=[1569] -1
+skip? [1573] = 0
+[1573]  +=[1589] +1
+
+[1573]  
+
+
+2a57 => 1b5a
+2da9 => b4b output error info
+path found at 11a4  10ac  2c4c 2b54 1c44 2a07 290f
+
+2c83 go wrong   set [1289] = [94f]  at 1279     //this is bad message
+
+d5b jmp d5c or d6a
+
+finally, [94f] = 152 print right  [94f] = 154 print wrong  ===== maybe set bit of [949] is right,otherwise wrong
+
+clear bit  of [949] at abd
+set [949] = 10e at ad2
+clear bit of [949] at 2ccc
+set [949] = [136e] at 2cde
+
+1936 [133d] += c until 40  [1344]  count
+    [1344] = [1344]*2**10+[1344]*2**11
+    [133d] += [1344]
+
+1cb4 [132f] = c0   [1cdc]<=>[1352]:off
+1cdf [1336] = c1
+1ce8 [132f] -= 20
+1cf8 [1336] -= 20
+1e47 [1336] *= 2 [1e4f] = [1336]  [1d07]: count < [1d17] 7   [1336] = [1336]*0x80
+1e67 [1336] += [132f]
+1f62 [26e8] = [1336]
+20a3 [26e8]
+2789 [26e8] = [26e8]*2+1   [26ef]:count < 10 (at 27ce)   [26e9] = 0x20*n+n=0x21*n  [26ea]  [26ec] = [1336]^[26e9]
+
+27f0 [1352] = [26ec]+[133d]  check [126f+count]  [1344] check_count  hash off in [1359] (0xa79-0xa87)
+
+
+126F:  FC7F F30F F361 F151  F886 F3D1 DB57 D9D5
+1277:  E26E F8CD F969 D90C  F821 F181 F85F F883
+127F:  E2A1 F47C EA5B FDFB  0001 0A92 0002 0002
+
+Av0cad0_Love_2018@flare-on.com
+
+

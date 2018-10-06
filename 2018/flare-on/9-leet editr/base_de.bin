@@ -1,0 +1,56 @@
+    PetMeLikeATurtle = False
+    Set processes = GetObject("winmgmts:").ExecQuery("SELECT * FROM Win32_Process WHERE " & _
+        "Caption = 'idaq64.exe' " & _
+        "OR Caption = 'idaq.exe' " & _
+        "OR Caption = 'idag64.exe' " & _
+        "OR Caption = 'idag.exe' " & _
+        "OR Caption = 'idaw64.exe' " & _
+        "OR Caption = 'idaw.exe' " & _
+        "OR Caption = 'idau64.exe' " & _
+        "OR Caption = 'idau.exe' " & _
+        "OR Caption = 'win32_remote.exe' " & _
+        "OR Caption = 'win64_remotex64.exe' " & _
+        "OR Caption = 'windbg.exe' " & _
+        "OR Caption = 'windbg(x64).exe' " & _
+        "OR Caption = 'windbg(x86).exe' " & _
+        "OR Caption = 'cdb.exe' " & _
+        "OR Caption = 'kd.exe' " & _
+        "OR Caption = 'ntsd.exe' " & _
+        "OR Caption = 'livekd.exe' " & _
+        "OR Caption = 'dbgsrv.exe' " & _
+        "OR Caption = 'gflags.exe' " & _
+        "OR Caption = 'DbgX.Shell.exe' " & _
+        "OR Caption = 'OLLYDBG.exe' " & _
+        "OR Caption = 'olly.exe' " & _
+        "OR Caption = 'immunity.exe' " & _
+        "OR Caption = 'ImmunityDebugger.exe' " & _
+        "OR Caption = 'x32dbg.exe' " & _
+        "OR Caption = 'x64dbg.exe' " & _
+        "OR Caption = 'x96dbg.exe' " & _
+        "OR Caption = 'gdb.exe' " & _
+        "OR Caption = 'processmonitor.exe' " & _
+        "OR Caption = 'sysanalyzer.exe' " & _
+        "OR Caption = 'regmon.exe' " & _
+        "OR Caption = 'regshot.exe' " & _
+        "OR Caption = 'procmon.exe' " & _
+        "OR Caption = 'procmon64.exe' " & _
+        "OR Caption = 'procexp.exe' " & _
+        "OR Caption = 'procexp64.exe' " & _
+        "OR Caption = 'tcpview.exe' " & _
+        "OR Caption = 'wireshark.exe' " & _
+        "OR Caption = 'syelogd.exe' " & _
+        "OR Caption = 'withdll.exe' " & _
+        "OR Caption = 'apatedns.exe' " & _
+        "OR Caption = 'fakenet.exe' " & _
+        "OR Caption = 'fakenet64.exe' " & _
+        "OR Caption = 'apimonitor.exe' " & _
+        "OR Caption = 'winapioverride32.exe' " & _
+        "OR Caption = 'CFF Explorer.exe' " & _
+        "OR Caption = 'peid.exe' " & _
+        "OR Caption = 'peview.exe' " & _
+        "OR Caption = 'petools.exe' " & _
+        "")
+    For Each process In processes
+        PetMeLikeATurtle = True
+        Exit For
+    Next

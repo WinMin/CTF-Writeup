@@ -1,0 +1,58 @@
+seed: 0x5f215742
+
+func0  a+13 == b
+func1  fac(a)&0xfffffffffffffff == b
+func2  a^0x2a == b
+func3  rc4(a) == b  key:Tis but a scratch.
+func4  a == b
+func5  rc4(a) == b  key:Tis but a scratch.
+func6  a+13 == b
+func7  fac(a)&0xfffffffffffffff == b
+func8  crc32(a) == b
+func9  a == b
+func10 a^0x2a == b
+func11 a^0x2a == b
+func12 a^0x2a == b
+func13  a+13 == b
+func14  a == b
+func15  a+13 == b
+func16  a^0x2a == b
+func17  a+13 == b
+func18  a^0x2a == b
+func19  a == b
+func20  fac(a)&0xfffffffffffffff == b
+func21  fac(a)&0xfffffffffffffff == b
+func22  a^0x2a == b
+func23  a == b
+func24  fac(a)&0xfffffffffffffff == b
+func25  debase(a) == b
+func26  a^0x2a == b
+func27  a+13 == b
+func28  fac(a)&0xfffffffffffffff == b
+func29  a == b
+func30  debase(a) == b
+func31  fac(a)&0xfffffffffffffff == b
+func32  crc32(a) == b
+
+1: 0,6,13,15,17,27            a+13 == b  
+2: 1,7,20,21,24,28,31         fac(a)&0xfffffffffffffff == b
+3: 2,10,11,12,16,18,22,26     a^0x2a == b
+4: 3,5                        rc4(a) == b  key:Tis but a scratch.
+5: 4,9,14,19,23,29            a == b
+6: 8,32                       crc32(a) == b
+7: 25,30                      debase(a) == b
+func_data_length  0x8f,0x147,0x84,0x2fe,0x7c,0xb3,0x326
+
+
+0x2346A7C2645F392A
+0x42704D2847746B53
+0x4A4038626A522549
+0x5024312D59444569
+0x6671764C21547967
+0x304F57516D68632B
+0x6C336E75345A4E65
+0x4B7A617732264837
+0x56
+
+
+mag!iC_mUshr00ms_maY_h4ve_g!ven_uS_Santa_ClaUs@flare-on.com

@@ -1,0 +1,50 @@
+xor1(0x404160,0,0x6e,'\xfe')
+xor1(0x4041D8,0,0x3c5,'\xfe')
+xor1(0x4045A0,0,0x23,'\xfe')
+xor1(0x4045C8,0,0x93,'\xfe')
+xor1(0x404660,0,0xb3,'\xfe')
+xor1(0x404718,0,0x70,'\xfe')
+
+dump(0x404790,0x5bb2,r"E:\CTF\flare-on\2018\9\vbcode.bin")
+dump(0x40a0f4,0x15,r"E:\CTF\flare-on\2018\9\key.bin")
+dump(0x40cce8,0x40cce8-0x40C398,r"E:\CTF\flare-on\2018\9\table.bin")
+dump(0x40cd28,0x23e0,r"E:\CTF\flare-on\2018\9\html.bin")
+
+'                               _a,
+'                              _W#m,
+'                             _Wmmmm/
+'BmmBmmBmm[  Bmm             a#mmmmmB/        BmmBmmBm6a   3BmmBmmBm
+'mmm[        mmm            j##mmmmmmm6       mmm   -4mm[  3mm[
+'mBmLaaaa,   Bmm           JW#mmP 4mmmmL      mmBaaaa#mm'  3Bm6aaaa,
+'mmmP!!"?'   mmm          JWmmmP   4mmmBL     Bmm!4X##"    3mmP????'
+'Bmm[        Bmmaaaaa    jWmmm?     4mmmBL    mmm  !##L,   3BmLaasaa
+'mmm[        mmm##Z#Z  _jWmmmmaaaaaa,]mBmm6.  mmB   "#Bm/  3mmm#UZ#Z
+'                     _WBmmmmm#Z#Z#!  "mmmBm,
+'                     ??!??#mmmm#!     "??!??
+'                        .JmmmP'
+'                       _jmmP'
+'                      _JW?'
+'                      "?
+
+If I were to title this piece, it would be 'A_FLARE_f0r_th3_Dr4m4t1(C)'
+
+
+md5   5db857f15394bdf6b25bfabc8960449b    wrong
+      377304de8cd92a7eaae7c115006c713e    wrong
+
+
+0040A0F4  0F 34 88 BF 02 E9 C8 CE BA EC FB 72 FA 71 8F C6
+
+
+
+0018F2B0   0086BC04  UNICODE "sn00gle-fl00gle-p00dlekins"
+
+
+g_interval = setInterval(function(){ if((textin.value.indexOf('j##mmmmmmm6') !=-1) &&(strhash(textin.value) == 1164071950))
+
+http://textfiles.com/occult/BOB/bobface.txt
+function strhash(s) {var hash = 0, i, c;s = s.replace(/\s+/g, '')for (i=0; i<s.length; i++) {c = s.charCodeAt(i);hash = ((hash << 5) - hash) + c;hash |= 0;} return hash;}
+
+scr1pt1ng_sl4ck1ng_and_h4ck1ng@flare-on.com
+
+

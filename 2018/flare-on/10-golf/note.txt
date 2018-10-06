@@ -1,0 +1,214 @@
+DBGTOOLS = "C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64";
+-b -k com:pipe,port=\\.\pipe\com_xp,baud=115200,resets=0 
+
+0xEE:_rax
+0xEF:_rdp
+0xF0:_rbx
+0xF1:_rcx
+0xF2:_rsi
+0xF3:_rbp
+0xF5:_rsp
+0xF6:_rdi
+0xF7:_r8
+0xF8:_r9
+0xF9:_r10
+0xFA:_r11
+0xFB:_r12
+0xFC:_r13
+0xFD:_r14
+0xFE:_r15
+
+1:We4r_  
+  mov [rsp+8],rbx
+  sub rsp,0x18
+  mov [rsp],1
+  mov rax,[rsp+0x20]
+  mov al,byte[rax]
+  cmp al,0x57
+  je L1
+  mov [rsp],0
+L1:
+  mov rax,[rsp+0x20]
+  mov al,byte[rax+1]
+  cmp al,0x65
+  je L2
+  mov [rsp],0
+L2:
+  mov rax,[rsp+0x20]
+  mov al,byte[rax+2]
+  cmp al,0x34
+  je L3
+  mov [rsp],0
+L3:
+  mov rax,[rsp+0x20]
+  mov al,byte[rax+3]
+  cmp al,0x72
+  je L4
+  mov [rsp],0
+L4:
+  mov rax,[rsp+0x20]
+  mov al,byte[rax+1]
+  cmp al,0x5f
+  je L5
+  mov [rsp],0
+L5:
+  mov al,byte[rsp]
+  lea rsp,[rsp+0x18]
+  ret
+  
+2:ur_v1s0r_
+  mov [rsp+8],rbx
+  sub rsp,0x28
+  mov [rsp],1
+  mov [rsp+8],0
+  mov [rsp+9],7
+  mov [rsp+0xa],0x2a
+  mov [rsp+0xb],3
+  mov [rsp+0xc],0x44
+  mov [rsp+0xd],06
+  mov [rsp+0xe],0x45
+  mov [rsp+0xf],7
+  mov [rsp+0x10],0x2a
+  mov [rsp+0x18],0x75
+  mov [rsp+0x1c],0
+  jmp L1
+L4:
+  mov eax,dword[rsp+0x1c]
+  lea eax,[rax+1]
+  mov [rsp+0x1c],eax
+L1:
+  cmp [rsp+1c],9
+  jge L2
+  mov rbx,[rsp+0x1c]
+  mov rax,[rsp+0x30]
+  mov bl,[rax+rbx]
+  mov rax,[rsp+0x18]
+  xor bl,al
+  mov rax,[rsp+0x1c]
+  mov rax,[rax+8+rsp]
+  cmp rbx,rax
+  je L3:
+  mov [rsp],0
+L3:
+  jmp L4
+L2:
+  mov al,[rsp]
+  add rsp,0x28
+  ret
+
+3:w1th_
+  mov [rsp+8],rbx
+  sub rsp,0x28
+  mov [rsp],1
+  mov [rsp+1],0x80
+  mov [rsp+4],0xa5
+  mov [rsp+5],0xb1
+  mov [rsp+6],2
+  mov [rsp+7],0x4c
+  mov [rsp+8],0xc5
+  mov [rsp+0xc],0
+  jmp L1
+L4:
+  mov rax,dword[rsp+0xc]
+  lea eax,[rax+1]
+  mov [rsp+0xc],eax
+L1:
+  cmp [rsp+c],5
+  jge L2
+  mov ebx,[rsp+c]
+  mov rax,[rsp+0x30]
+  mov al,byte[rax+rbx]
+  mov bl,byte[rsp+1]
+  xor al,bl
+  xor al,0x52
+  mov [rsp+0x10],al
+  mov ebx,[rsp+0x10]
+  mov eax,[rsp+0xc]
+  mov eax,[rsp+rax+4]
+  cmp eax,ebx
+  je L3
+  mov [rsp],0
+L3:
+  mov eax,[rsp+1]
+  lea eax,[eax+0x52]
+  mov [rsp+1],al
+  jmp L4
+L2:
+  mov al,[rsp]
+  add rsp,0x28
+  ret
+
+4:Fl4R3
+  mov [rsp+8],rbx
+  sub rsp,0x18
+  mov [rsp],1
+  mov [rsp+8],0
+  mov [rsp+4],0
+  mov rax,[rsp+0x20]
+  mov al,[rax]
+  mov ecx,[rsp+8]
+  add ecx,eax
+  mov rax,[rsp+0x20]
+  mov al,[rax+1]
+  add ecx,eax
+  mov rax,[rsp+0x20]
+  mov al,[rax+2]
+  add ecx,eax
+  mov rax,[rsp+0x20]
+  mov al,[rax+3]
+  add ecx,eax
+  mov rax,[rsp+0x20]
+  mov bl,[rax+4]
+  mov eax,ecx
+  add eax,ebx
+  mov [rsp+8],eax
+  mov [rsp],1
+  mov rax,[rsp+0x20]
+  mov al,[rax]
+  cmp al,0x46
+  je L1
+  mov [esp],0
+L1:
+  mov rax,[rsp+0x20]
+  mov al,[rax+4]
+  cmp al,0x33
+  je L2
+  mov [rsp],0
+L2:
+  cmp [rsp+8],0x16b
+  je L3
+  mov [esp],0
+L3:  
+  mov rax,[rsp+0x20]
+  mov cl,[rax+2]
+  mov rax,[rsp+0x20]
+  mov bl,[rax+3]  
+  mov eax,ecx
+  add eax,ebx
+  cmp eax,0x86
+  je L4
+  mov [rsp],0
+L4:  
+  mov rax,[rsp+0x20]
+  mov cl,[rax+1]
+  mov rax,[rsp+0x20]
+  mov bl,[rax+2]
+  mov eax,ecx
+  add eax,ebx
+  cmp eax,0xa0
+  je L5
+  mov [rsp],0
+L5:
+  mov al,byte[rsp]
+  lea rsp,[rsp+0x18]
+  ret
+   
+  
+  
+a0+a1+a2+a3+a4 = 0x16b
+a0 = 0x46
+a4 = 0x33
+a2+a3 = 0x86
+a1+a2 = 0xa0
+
+We4r_ur_v1s0r_w1th_Fl4R3@flare-on.com
